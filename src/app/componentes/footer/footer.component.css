@@ -1,25 +1,11 @@
-.navbar {
+.footer-content{
     background-color: var(--color7);
-}
-.marca-logo{
     color: var(--color6);
-    margin: 0px 10px;
-    font-weight: bold;
-    font-size: 25px;
 }
-.nav-link{
-    color: var(--color6);
-    margin: 0px 10px;
-    font-weight: bold;
-}
-.nav-link:hover{
-    transform: scale(1.4);
-}
-
 .links-profiles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 .links-profiles a {

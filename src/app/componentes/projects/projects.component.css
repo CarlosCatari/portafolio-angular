@@ -1,0 +1,44 @@
+.container-project {
+    color: var(--color6);
+}
+.title-container{
+    color: var(--color7);
+}
+.title-container i{
+    margin-right: 10px;
+}
+.container-card{
+    height: 430px;
+    width: 290px;
+    margin: 10px;
+    padding: 6px;
+    background-color: var(--color5);
+    border-radius: 10px;
+}
+.container-card img{
+    height: 140px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.container-icons{
+    flex-wrap: wrap;
+    max-width: 100%;
+    
+}
+.container-icons a{
+    margin: 2px;
+    padding: 0px 2px;
+    display: flex;
+    align-items: center;
+    color: var(--color6);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.container-icons a i{
+    margin: 0px 3px;
+}
+.container-icons a span{
+    margin-right: 3px;
+}

@@ -1,13 +1,14 @@
+:root {
+    --color1: #000000;
+    --color2: #0c0d1d;
+    --color3: #0c032a;
+    --color4: #1b133a;
+    --color5: #4e4e4e;
+    --color6: #c9c9c9;
+    --color7: #00a0c4;
+}
 body{
     padding: 0;
     margin: 0;
-}
-:root {
-    --color1: #302a37;
-    --color2: #494351;
-    --color3: #635d6b;
-    --color4: #7c7685;
-    --color5: #968f9f;
-    --color6: #ffffff;
-    --color7: #00a0c4;
+    background-color: var(--color2);
 }
