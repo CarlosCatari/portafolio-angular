@@ -1,17 +1,24 @@
-.title-container{
+.title-container {
     color: var(--color7);
 }
-.container-aboutme{
+
+.title-container i{
+    margin-right: 10px;
+}
+
+.container-aboutme {
     color: var(--color6);
 }
 
-.card-skill{
+.card-skill {
     height: 80px;
     width: 50px;
     text-align: center;
     margin: 2px 14px;
 }
-.card-skill img{
+
+.card-skill img {
     height: 55px;
     width: 45px;
 }
+

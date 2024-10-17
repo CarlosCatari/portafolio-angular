@@ -1,61 +1,145 @@
 .main-height {
-    height: 90vh;
+    height: 92vh;
     background-position: center;
     background-size: cover;
     animation: zoomBackground 10s infinite alternate;
 }
-.main-height div h1 {
-    color: var(--color6);
-    font-size: 50px;
-}
-.main-height div h2{
-    color: var(--color7);
-}
+
 @keyframes zoomBackground {
     0% {
         background-size: 100%;
     }
+
     100% {
         background-size: 120%;
     }
 }
 
-.content-btn{
+.main-height div h1 {
+    color: var(--color6);
+    font-size: 50px;
+
+}
+
+.main-height div h2 {
+    color: var(--color7);
+}
+
+.main-height div h1,
+.main-height div h2 {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+.content-btn {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
-.btn-active{
-    width:200px;
-    height:50px;
-    display: flex; /* Usar flexbox */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; 
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+
+.btn-active {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    /* Usar flexbox */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
     margin: 15px;
-    color:var(--color1);
+    color: var(--color1);
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 400;
     padding: 0px;
-    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .4);
     background-color: var(--color7);
     color: var(--color6);
 }
-.btn-active:hover{
+
+.btn-active:hover {
     transition: all .5s;
     transform: scale(1.1);
 }
 
-.btn-animate{
-    width:200px;
-    height:50px;
-    display: flex; /* Usar flexbox */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; 
+.btn-animate {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    /* Usar flexbox */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
     margin: 15px;
     background: var(--color6);
     border-style: none;
-    color:var(--color7);
+    color: var(--color7);
     font-size: 23px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -67,94 +151,108 @@
     transition: all .5s;
     box-shadow: 0px 1px 2px var(--color7);
 }
-.btn-animate span{
+
+.btn-animate span {
     position: absolute;
     display: block;
 }
-.btn-animate span:nth-child(1){
+
+.btn-animate span:nth-child(1) {
     height: 3px;
-    width:200px;
-    top:0px;
-    left:-200px;
-    background: linear-gradient(to right, rgba(0,0,0,0), var(--color7));
+    width: 200px;
+    top: 0px;
+    left: -200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--color7));
     border-top-right-radius: 1px;
     border-bottom-right-radius: 1px;
     animation: span1 2s linear infinite;
     animation-delay: 1s;
 }
 
-@keyframes span1{
-    0%{
-        left:-200px
+@keyframes span1 {
+    0% {
+        left: -200px
     }
-    100%{
-        left:200px;
+
+    100% {
+        left: 200px;
     }
 }
-.btn-animate span:nth-child(2){
+
+.btn-animate span:nth-child(2) {
     height: 70px;
     width: 3px;
-    top:-70px;
-    right:0px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), var(--color7));
+    top: -70px;
+    right: 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--color7));
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
     animation: span2 2s linear infinite;
     animation-delay: 2s;
 }
-@keyframes span2{
-    0%{
-        top:-70px;
+
+@keyframes span2 {
+    0% {
+        top: -70px;
     }
-    100%{
-        top:70px;
+
+    100% {
+        top: 70px;
     }
 }
-.btn-animate span:nth-child(3){
-    height:3px;
-    width:200px;
-    right:-200px;
+
+.btn-animate span:nth-child(3) {
+    height: 3px;
+    width: 200px;
+    right: -200px;
     bottom: 0px;
-    background: linear-gradient(to left, rgba(0,0,0,0), var(--color7));
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), var(--color7));
     border-top-left-radius: 1px;
     border-bottom-left-radius: 1px;
     animation: span3 2s linear infinite;
     animation-delay: 3s;
 }
-@keyframes span3{
-    0%{
-        right:-200px;
+
+@keyframes span3 {
+    0% {
+        right: -200px;
     }
-    100%{
+
+    100% {
         right: 200px;
     }
 }
-.btn-animate span:nth-child(4){
-    height:70px;
-    width:3px;
-    bottom:-70px;
-    left:0px;
-    background: linear-gradient(to top, rgba(0,0,0,0), var(--color7));
+
+.btn-animate span:nth-child(4) {
+    height: 70px;
+    width: 3px;
+    bottom: -70px;
+    left: 0px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), var(--color7));
     border-top-right-radius: 1px;
     border-top-left-radius: 1px;
     animation: span4 2s linear infinite;
     animation-delay: 4s;
 }
-@keyframes span4{
-    0%{
+
+@keyframes span4 {
+    0% {
         bottom: -70px;
     }
-    100%{
-        bottom:70px;
+
+    100% {
+        bottom: 70px;
     }
 }
-.btn-animate:hover{
+
+.btn-animate:hover {
     transition: all .5s;
     transform: scale(1.1);
-    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .4);
     background-color: var(--color7);
     color: var(--color6);
 }
-.btn-animate:hover span{
+
+.btn-animate:hover span {
     animation-play-state: paused;
 }
