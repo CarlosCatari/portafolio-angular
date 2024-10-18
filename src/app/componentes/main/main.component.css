@@ -1,7 +1,4 @@
 .main-height {
-    height: 92vh;
-    background-position: center;
-    background-size: cover;
     animation: zoomBackground 10s infinite alternate;
 }
 @keyframes zoomBackground {
@@ -129,14 +126,18 @@
     }
     100% {
         bottom: 70px;
-    }
+    }   
+}
+.btn-animate{
+    background-color: #c9c9c9;
+    color: #00a0c4;
 }
 .btn-animate:hover {
     transition: all .5s;
     transform: scale(1.1);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, .4);
-    background-color: var(--color7);
-    color: var(--color6);
+    background-color: #00a0c4;
+    color: #c9c9c9;
 }
 .btn-animate:hover span {
     animation-play-state: paused;
