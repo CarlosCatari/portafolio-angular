@@ -1,0 +1,23 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$primary: #00a0c4;
+$secondary: #0c0d1d;
+$success: #4e4e4e;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #c9c9c9;
+$dark: #000000;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "danger": $danger,
+    "warning": $warning,
+    "info": $info,
+    "light": $light,
+    "dark": $dark
+);
+@import "../../node_modules/bootstrap/scss/bootstrap";

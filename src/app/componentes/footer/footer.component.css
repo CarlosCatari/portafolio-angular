@@ -1,22 +1,3 @@
-.footer-content{
-    background-color: var(--color7);
-    color: var(--color6);
-}
-.links-profiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    align-items: center;
-}
-.links-profiles a {
-    margin: 5px;
-    font-size: 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color6);
-    text-decoration: none;
-}
 .links-profiles a i {
     transition: transform 0.2s;
 }
